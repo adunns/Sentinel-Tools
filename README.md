@@ -12,8 +12,8 @@ Github: https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Ingest-Can
 
 ### Modifications
 
-**Logic app** - Added another parsing block to correctly parse the Canary token data (such as username and machine id) so that it can be passed to Sentinel in the compose block.<br />
-**Sentinel Rule** - added some more entity mapping so the username and machine id show up in the alert.
+**Logic app** - Added another parsing block to correctly parse the Canary token data (such as username and machine id) so that it can be passed to Sentinel in the compose block. Removed GeoIP block as the data is the same in the canary token details once parsed properly. <br />
+**Sentinel Analytics Rule** - added some more entity mapping so the username and machine id (and any other details) show up in the alert. Added Mitre Attack techniques.
 
 
 
